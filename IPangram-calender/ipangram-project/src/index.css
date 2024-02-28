@@ -1,0 +1,309 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container label {
+  margin-left: 5px;
+}
+
+.date-selector,
+.timezone-selector,
+.weekly-schedule,
+.displayed-times,
+.calendar {
+  margin-bottom: 20px;
+}
+
+.date-selector select,
+.timezone-selector select {
+  padding: 5px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.weekly-schedule label {
+  margin-right: 10px;
+}
+
+.weekly-schedule label:last-child {
+  margin-right: 0;
+}
+
+.weekly-schedule input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.calendar button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.calendar button:hover {
+  background-color: #0056b3;
+}
+
+.schedule-display {
+  margin-top: 20px;
+}
+
+.schedule-display p {
+  margin: 0;
+  padding: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.schedule-display ul {
+  padding-left: 20px;
+}
+
+.schedule-display li {
+  margin-bottom: 5px;
+}
+
+.schedule-display label {
+  font-weight: bold;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+label {
+  font-size: 16px;
+  color: #555;
+}
+
+.date-selector-container {
+  margin-bottom: 20px;
+}
+
+.timezone-selector-container {
+  margin-bottom: 20px;
+}
+
+.displayed-times-container {
+  margin-bottom: 20px;
+}
+
+/* Calendar Container */
+.calendar-container {
+  margin-bottom: 20px;
+}
+
+.weekly-schedule-container {
+  margin-bottom: 20px;
+}
+
+.schedule-display-container {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 100px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.calendar-container {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.calendar-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.calendar-header button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.calendar-header button:hover {
+  color: #f0f0f0;
+}
+
+.calendar-header h2 {
+  margin: 0;
+}
+
+.calendar-body {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+}
+
+.calendar-day-cell {
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.calendar-day-cell:hover {
+  background-color: #f0f0f0;
+}
+
+.calendar-day {
+  font-weight: bold;
+}
+
+.event-indicator {
+  position: relative;
+  height: 5px;
+  background-color: #007bff;
+}
+
+.event-indicator .tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.event-indicator:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
